@@ -1,0 +1,107 @@
+
+.main {
+	width: 100vw;
+	height: 100vh;
+
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main > .panel {
+	width: 80%;
+	height: 85%;
+	margin: auto;
+
+	border-radius: 50px;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
+
+	display: flex;
+	flex-direction: row;
+
+	overflow: hidden;
+}
+
+.main > .panel > * {
+	width: 50%;
+	height: 100%;
+}
+.main > .panel > .img {
+	background-image: url('/assets/img/playing-futbol.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: black;
+	font-style: italic;
+
+	text-align: center;
+	margin: 0;
+
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+form {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form > * {
+	margin: 10px 0;
+}
+form > h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+}
+
+form > input {
+	width: 80%;
+	height: 40px;
+
+	border: solid 1px lightgray;
+	border-radius: 10px;
+	padding: 0 10px;
+
+	font-size: 1.2rem;
+
+	transition: border-color 0.2s;
+}
+form > input:focus {
+	border-color: gray;
+	outline: none;
+}
+
+form > button {
+	width: 50%;
+	height: 50px;
+
+	background-color: lightgray;
+	color: black;
+	border: none;
+	border-radius: 10px;
+
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	transition: background-color 0.2s, color 0.2s;
+}
+form > button:hover {
+	background-color: gray;
+	color: white;
+	cursor: pointer;
+}
